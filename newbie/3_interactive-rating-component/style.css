@@ -41,7 +41,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--dark-blue);
-  opacity: 0.5;
 }
 .card > span {
   display: inline-flex;

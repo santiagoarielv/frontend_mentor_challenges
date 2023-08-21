@@ -124,11 +124,6 @@ body {
   align-items: center;
   text-align: center;
 }
-.design {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-}
 .chip {
   margin-top: 2rem;
   color: var(--orange);

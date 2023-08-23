@@ -31,12 +31,41 @@ body {
   line-height: var(--line-height);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* dark */
-    --element: hsl(209, 23%, 22%);
-    --background: hsl(207, 26%, 17%);
-    --input: hsl(0, 0%, 52%);
-    --text: hsl(0, 0%, 100%);
-  }
+:root.dark {
+  /* dark */
+  --element: hsl(209, 23%, 22%);
+  --background: hsl(207, 26%, 17%);
+  --input: hsl(0, 0%, 52%);
+  --text: hsl(0, 0%, 100%);
 }
+
+#target {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--element);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.1s ease-in-out;
+  max-width: 300px;
+  width: 100%;
+}
+.card > img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1rem;
+}
+
+.design {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
